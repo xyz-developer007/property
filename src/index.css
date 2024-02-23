@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #2a2a86;
+  font-family: Archivo;
+}
+.container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.row {
+  display: flex;
+  margin: 0 -15px;
+}
+.col-4 {
+  width: 33.33%;
+  padding: 0 15px;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 52px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+p {
+  font-size: 24px;
+}
+.landing-page .slick-prev,
+.landing-page .slick-next {
+  width: 50px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing-page .slick-prev {
+  z-index: 9;
+  background-image: url(./assets/prev-arrow.svg);
+}
+.landing-page .slick-next {
+  background-image: url(./assets/next-arrow.svg);
+}
+.landing-page .slick-prev:before,
+.landing-page .slick-next:before {
+  display: none;
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
